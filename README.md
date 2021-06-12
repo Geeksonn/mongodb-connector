@@ -2,7 +2,7 @@
 
 A simple, yet useful, mongoDB connector.
 
-![npm](https://www.npmjs.com/package/@geekson/mongodb-connector)
+[![npm](https://img.shields.io/npm/v/@geekson/mongodb-connector)](https://www.npmjs.com/package/@geekson/mongodb-connector)
 
 ## Install
 
