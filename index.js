@@ -1,6 +1,7 @@
-import { MongoClient } from 'mongodb';
+import * as mongodb from 'mongodb';
 
 const { MONGODB_URI, MONGODB_DB } = process.env
+const MongoClient = mongodb.default.MongoClient;
 
 if (!MONGODB_URI) {
   throw new Error(
