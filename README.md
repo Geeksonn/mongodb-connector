@@ -14,7 +14,7 @@ Ensure to have a `.env` file with the following properties:
 `MONGODB_URI`: the URI to connect to
 `MONGODB_DB`: the database to connect to
 
-`
+```
 import { connectToDatabase } from 'mongodb-connector';
 
 async getAllPosts() {
@@ -22,4 +22,4 @@ async getAllPosts() {
 
     return await db.collection('Post').find().toArray();
 }
-`
+```
