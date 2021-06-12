@@ -1,0 +1,27 @@
+{
+  "name": "@geekson/mongodb-connector",
+  "version": "1.0.0",
+  "description": "A simple, yet useful, mongodb connector.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geeksonn/mongodb-connector.git"
+  },
+  "keywords": [
+    "mongodb",
+    "connector",
+    "simple"
+  ],
+  "author": "Olivier Sputael <sputael.o@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geeksonn/mongodb-connector/issues"
+  },
+  "homepage": "https://github.com/Geeksonn/mongodb-connector#readme",
+  "dependencies": {
+    "mongodb": "^3.6.9"
+  }
+}
