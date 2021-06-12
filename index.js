@@ -1,4 +1,7 @@
 import * as mongodb from 'mongodb';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const { MONGODB_URI, MONGODB_DB } = process.env
 const MongoClient = mongodb.default.MongoClient;
@@ -26,7 +29,7 @@ if (!cached) {
   cached = global.mongo = { conn: null, promise: null }
 }
 
-exports.connectToDatabase = async function() {
+export default async function connectToDatabase() {
   if (cached.conn) {
     return cached.conn
   }
