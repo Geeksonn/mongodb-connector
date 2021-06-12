@@ -6,7 +6,9 @@ A simple, yet useful, mongoDB connector.
 
 ## Install
 
-`npm install @geekson/mongodb-connector`
+```bash
+npm install @geekson/mongodb-connector
+```
 
 ## Usage
 
@@ -14,7 +16,7 @@ Ensure to have a `.env` file with the following properties:
 `MONGODB_URI`: the URI to connect to
 `MONGODB_DB`: the database to connect to
 
-```
+```js
 import connectToDatabase from '@geekson/mongodb-connector';
 
 async getAllPosts() {
