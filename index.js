@@ -1,10 +1,9 @@
-import * as mongodb from 'mongodb';
-import dotenv from 'dotenv';
+const MongoClient = require('mongodb').MongoClient;
+const dotenv = require('dotenv');
 
 dotenv.config();
 
 const { MONGODB_URI, MONGODB_DB } = process.env
-const MongoClient = mongodb.default.MongoClient;
 
 if (!MONGODB_URI) {
   throw new Error(
@@ -29,7 +28,7 @@ if (!cached) {
   cached = global.mongo = { conn: null, promise: null }
 }
 
-export default async function connectToDatabase() {
+async function connectToDatabase() {
   if (cached.conn) {
     return cached.conn
   }
@@ -40,7 +39,6 @@ export default async function connectToDatabase() {
       useUnifiedTopology: true,
     }
 
-    console.log('Connection to ' + MONGODB_URI + ' // ' + MONGODB_DB);
     cached.promise = MongoClient.connect(MONGODB_URI, opts).then((client) => {
       return {
         client,
@@ -51,3 +49,5 @@ export default async function connectToDatabase() {
   cached.conn = await cached.promise
   return cached.conn
 }
+
+module.exports = connectToDatabase;
