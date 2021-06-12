@@ -2,7 +2,7 @@
 
 A simple, yet useful, mongoDB connector.
 
-![npm](https://img.shields.io/npm/v/@geekson/mongodb-connector)
+![npm](https://www.npmjs.com/package/@geekson/mongodb-connector)
 
 ## Install
 
@@ -15,7 +15,7 @@ Ensure to have a `.env` file with the following properties:
 `MONGODB_DB`: the database to connect to
 
 ```
-import { connectToDatabase } from '@geekson/mongodb-connector';
+import connectToDatabase from '@geekson/mongodb-connector';
 
 async getAllPosts() {
     const { db } = await connectToDatabase();
