@@ -1,4 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
+const ObjectID = require('mongodb').ObjectID;
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -51,3 +52,4 @@ async function connectToDatabase() {
 }
 
 module.exports = connectToDatabase;
+module.exports = ObjectID;
