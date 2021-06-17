@@ -51,5 +51,7 @@ async function connectToDatabase() {
   return cached.conn
 }
 
-module.exports = connectToDatabase;
-module.exports = ObjectID;
+module.exports = {
+  connectToDatabase: connectToDatabase,
+  ObjectID: ObjectID
+};

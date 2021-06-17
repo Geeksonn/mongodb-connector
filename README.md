@@ -17,7 +17,7 @@ Ensure to have a `.env` file with the following properties:
 `MONGODB_DB`: the database to connect to
 
 ```js
-import connectToDatabase from '@geekson/mongodb-connector';
+import { connectToDatabase } from '@geekson/mongodb-connector';
 
 async getAllPosts() {
     const { db } = await connectToDatabase();
