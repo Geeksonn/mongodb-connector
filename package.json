@@ -1,6 +1,6 @@
 {
   "name": "@geekson/mongodb-connector",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "A simple, yet useful, mongodb connector.",
   "main": "index.js",
   "scripts": {
