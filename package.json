@@ -23,6 +23,6 @@
   "homepage": "https://github.com/Geeksonn/mongodb-connector#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "mongodb": "^3.6.9"
+    "mongodb": "^4.2.1"
   }
 }
