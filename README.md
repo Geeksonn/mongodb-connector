@@ -25,3 +25,9 @@ async getAllPosts() {
     return await db.collection('Post').find().toArray();
 }
 ```
+
+## Changelog
+
+**2021-12-04**
+Updated version of underlying library (mongodb). 
+Please refer to [this page](https://github.com/mongodb/node-mongodb-native/blob/HEAD/docs/CHANGES_4.0.0.md) for instructions (many changes).
